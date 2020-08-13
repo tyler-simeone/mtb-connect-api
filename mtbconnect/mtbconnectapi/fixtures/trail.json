@@ -10,5 +10,41 @@
         "zipcode": "37067",
         "creator": "1"
       }
-    }
+    },
+    {
+        "pk": 2,
+        "model": "mtbconnectapi.trail",
+        "fields": {
+          "trail_name": "Cool Springs Trail",
+          "trail_img": "https://reviews.mtbr.com/wp-content/uploads/2014/04/betteride-trailride.jpg",
+          "description": "Great little trail not far from the heart of Cool Springs!",
+          "address": "7062 Southstar Drive, Franklin, TN",
+          "zipcode": "37067",
+          "creator": "1"
+        }
+      },
+    {
+        "pk": 3,
+        "model": "mtbconnectapi.trail",
+        "fields": {
+          "trail_name": "Montgomery Bell",
+          "trail_img": "https://static.rootsrated.com/assets/placeholders/activity--mountain-biking-6107b472d66bbbcb129c1b3815527b21ef2931a21690fabc7c449ad0e1094ba0.jpg",
+          "description": "One of the favorite trail systems in Middle Tennessee among riders. The trail builders made excellent use of the 10+ miles of trail here. Drains very well so a great trail to ride in the wet-season.",
+          "address": "836 Bill Duke Rd #830, White Bluff, TN",
+          "zipcode": "37027",
+          "creator": "1"
+        }
+      },
+    {
+        "pk": 4,
+        "model": "mtbconnectapi.trail",
+        "fields": {
+          "trail_name": "Baker Creek Preserve",
+          "trail_img": "https://cdn-files.apstatic.com/mtb/7011246_medium_1554839114.jpg",
+          "description": "Great bike park! Big jumps and very fast downhill sections of trail. Best for experienced riders.",
+          "address": "3700 Lancaster Dr, Knoxville, TN",
+          "zipcode": "37067",
+          "creator": "1"
+        }
+      }
 ]
