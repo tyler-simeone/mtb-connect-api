@@ -1,23 +1,23 @@
 from django.db import models
-from django.contrib.auth.models import User
 from django.urls import reverse
+from .user import User
 
-class User(models.Model):
+class Trail(models.Model):
     
-    first_name = models.CharField(null = False, max_length = 20) 
-    last_name = models.CharField(null = False, max_length = 20)
-    username = models.CharField(null = False, max_length = 20)
-    email = models.EmailField(null = False, max_length = 254)
-    # For now the avatar_img field will store an image address, will modify later
-    avatar_img = models.CharField(null = False, max_length = 2000)
-    user = models.ForeignKey(User, on_delete = models.CASCADE)
+    trail_name = models.CharField(null = False, max_length = 20) 
+    # For now the trail_img field will store an image address, will modify later
+    trail_img = models.CharField(null = False, max_length = 2000)
+    description = models.CharField(null = False, max_length = 500)
+    address = models.CharField(null = False, max_length = 100)
+    zipcode = models.CharField(null = False, max_length = 10)
+    creatorId = models.ForeignKey(User, on_delete = models.CASCADE)
     
     class Meta:
-        verbose_name = ("User")
-        verbose_name_plural = ("Users")        
+        verbose_name = ("Trail")
+        verbose_name_plural = ("Trails")        
         
     def __str__(self):
-        return f"User ID: {self.user}"
+        return f"Trail Name: {self.trail_name}"
     
     def get_absolute_url(self):
-        return reverse("user_detail", kwargs={"pk": self.pk})
+        return reverse("trail_detail", kwargs={"pk": self.pk})
