@@ -6,8 +6,8 @@ from .trail import Trail
 
 class TrailUser(models.Model):
     
-    userId = models.ForeignKey(User, on_delete = models.CASCADE)
-    trailId = models.ForeignKey(Trail, on_delete = models.CASCADE)
+    user = models.ForeignKey(User, on_delete = models.CASCADE)
+    trail = models.ForeignKey(Trail, on_delete = models.CASCADE)
     
     class Meta:
         verbose_name = ("TrailUser")
