@@ -1,0 +1,14 @@
+[
+    {
+      "pk": 1,
+      "model": "mtbconnectapi.trail",
+      "fields": {
+        "trail_name": "Percy Warner",
+        "trail_img": "https://qph.fs.quoracdn.net/main-raw-134684551-jixoicflljktgefookoaidzgcduoxioq.jpeg",
+        "description": "Awesome trail with super-fun features such as berms, rock drop-offs, and jumps. Riders can pick up some great speed on the bike at these trails.",
+        "address": "1300 Forrest Park Dr, Nashville, TN",
+        "zipcode": "37067",
+        "creator": "1"
+      }
+    }
+]
