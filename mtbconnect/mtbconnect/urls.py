@@ -27,7 +27,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     # path('', include(router.urls)),
     path('register', register_user),
-    # path('login', login_user),
+    path('login', login_user),
     # add paths to all routes, as well as auth viewsets,
     # obtain_auth_token, and the last api-auth one as well..
 ]
