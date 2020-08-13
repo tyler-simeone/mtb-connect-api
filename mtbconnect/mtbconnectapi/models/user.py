@@ -4,13 +4,9 @@ from django.urls import reverse
 
 class User(models.Model):
     
-    first_name = models.CharField(null = False, max_length = 20) 
-    last_name = models.CharField(null = False, max_length = 20)
-    username = models.CharField(null = False, max_length = 20)
-    email = models.EmailField(null = False, max_length = 254)
-    # For now the avatar_img field will store an image address, will modify later
-    avatar_img = models.CharField(null = False, max_length = 2000)
     user = models.ForeignKey(User, on_delete = models.CASCADE)
+    # For now the avatar_img field will store an image address, will modify later
+    avatar_img = models.CharField(null = True, max_length = 2000)
     
     class Meta:
         verbose_name = ("User")
