@@ -1,0 +1,12 @@
+[
+    {
+      "pk": 1,
+      "model": "mtbconnectapi.friend",
+      "fields": {
+        "sender": 1,
+        "receiver": 2,
+        "requestPending": 1,
+        "requestAccepted": 0
+      }
+    }
+]
