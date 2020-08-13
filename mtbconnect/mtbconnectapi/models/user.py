@@ -10,6 +10,7 @@ class User(models.Model):
     email = models.EmailField(null = False, max_length = 254)
     # For now the avatar_img field will store an image address, will modify later
     avatar_img = models.CharField(null = False, max_length = 2000)
+    user = models.ForeignKey(User, on_delete = models.CASCADE)
     
     class Meta:
         verbose_name = ("User")
