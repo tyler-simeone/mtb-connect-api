@@ -23,9 +23,8 @@ def register_user(request):
 
     web_user = WebUser.objects.create(
         user=new_user,
-        address=req_body["address"],
-        phone_number=req_body["phone_number"]
-    )
+        avatar_img=req_body["avatar_img"]
+        )
 
 
     web_user.save()
