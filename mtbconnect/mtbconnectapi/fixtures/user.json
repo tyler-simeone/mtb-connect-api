@@ -1,0 +1,14 @@
+[
+    {
+      "pk": 1,
+      "model": "mtbconnectapi.user",
+      "fields": {
+        "first_name": "Tyler",
+        "last_name": "Simeone",
+        "username": "shredtildead",
+        "email": "letsride@gmail.com",
+        "avatar_img": "https://qph.fs.quoracdn.net/main-raw-134684551-jixoicflljktgefookoaidzgcduoxioq.jpeg",
+        "user": 1
+      }
+    }
+]
