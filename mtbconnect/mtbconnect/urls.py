@@ -18,12 +18,16 @@ from rest_framework import routers
 from rest_framework.authtoken.views import obtain_auth_token
 from django.contrib import admin
 from django.urls import path
+from mtbconnectapi.views import *
 
 router = routers.DefaultRouter(trailing_slash=False)
 # Register your viewset routes here
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    # path('', include(router.urls)),
+    # path('register', register_user),
+    # path('login', login_user),
     # add paths to all routes, as well as auth viewsets,
     # obtain_auth_token, and the last api-auth one as well..
 ]
