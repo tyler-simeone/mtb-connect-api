@@ -4,8 +4,8 @@ from .user import User
 
 class Friend(models.Model):
     
-    sender = models.ForeignKey(User, on_delete = models.CASCADE)
-    receiver = models.ForeignKey(User, on_delete = models.CASCADE)
+    sender = models.ForeignKey(User, related_name="sender", on_delete = models.CASCADE)
+    receiver = models.ForeignKey(User, related_name="receiver", on_delete = models.CASCADE)
     requestPending = models.BooleanField(null=False, default=0)
     requestAccepted = models.BooleanField(null=False, default=0)
 

@@ -10,7 +10,7 @@ class Trail(models.Model):
     description = models.CharField(null = False, max_length = 500)
     address = models.CharField(null = False, max_length = 100)
     zipcode = models.CharField(null = False, max_length = 10)
-    creatorId = models.ForeignKey(User, on_delete = models.CASCADE)
+    creator = models.ForeignKey(User, on_delete = models.CASCADE)
     
     class Meta:
         verbose_name = ("Trail")
