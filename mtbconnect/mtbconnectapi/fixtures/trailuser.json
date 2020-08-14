@@ -6,5 +6,69 @@
         "trail": 1,
         "user": 1
       }
+    },
+    {
+      "pk": 2,
+      "model": "mtbconnectapi.trailuser",
+      "fields": {
+        "trail": 1,
+        "user": 4
+      }
+    },
+    {
+      "pk": 3,
+      "model": "mtbconnectapi.trailuser",
+      "fields": {
+        "trail": 1,
+        "user": 5
+      }
+    },
+    {
+      "pk": 4,
+      "model": "mtbconnectapi.trailuser",
+      "fields": {
+        "trail": 2,
+        "user": 1
+      }
+    },
+    {
+      "pk": 5,
+      "model": "mtbconnectapi.trailuser",
+      "fields": {
+        "trail": 2,
+        "user": 7
+      }
+    },
+    {
+      "pk": 6,
+      "model": "mtbconnectapi.trailuser",
+      "fields": {
+        "trail": 3,
+        "user": 5
+      }
+    },
+    {
+      "pk": 7,
+      "model": "mtbconnectapi.trailuser",
+      "fields": {
+        "trail": 3,
+        "user": 8
+      }
+    },
+    {
+      "pk": 8,
+      "model": "mtbconnectapi.trailuser",
+      "fields": {
+        "trail": 4,
+        "user": 8
+      }
+    },
+    {
+      "pk": 9,
+      "model": "mtbconnectapi.trailuser",
+      "fields": {
+        "trail": 4,
+        "user": 9
+      }
     }
 ]
