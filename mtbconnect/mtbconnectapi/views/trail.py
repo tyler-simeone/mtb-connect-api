@@ -48,10 +48,31 @@ class Trails(ViewSet):
         except Exception as ex:
             return HttpResponseServerError(ex)
 
+    def put(self, request, pk=None):
+        """Handle PUT requests for an individual trail
+        Returns:
+            Response -- Empty body with 204 status code
+        """
+        trail = Trail.objects.get(pk=pk)
+        trail.trail_name = request.data["trail_name"]
+        trail.trail_img = request.data["trail_img"]
+        trail.description = request.data["description"]
+        trail.address = request.data["address"]
+        trail.zipcode = request.data["zipcode"]
+        trail.creator_id = request.data["creator_id"]
+        trail.save()
+
+        return Response({}, status=status.HTTP_204_NO_CONTENT)
+
     def list(self, request):
         
         trails = Trail.objects.all()
-        
+
+        zipcode = self.request.query_params.get('zipcode')
+
+        if zipcode is not None:
+            trails = Trail.objects.filter(zipcode = zipcode)
+
         serializer = TrailSerializer(
             trails, many=True, context={'request': request})
 
