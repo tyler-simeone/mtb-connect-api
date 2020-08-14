@@ -17,22 +17,20 @@ class FriendSerializer(serializers.HyperlinkedModelSerializer):
 
 class Friends(ViewSet):
 
-    # def create(self, request):
+    def create(self, request):
     
-    #     new_trail = Trail()
-    #     new_trail.trail_name = request.data["trail_name"]
-    #     new_trail.trail_img = request.data["trail_img"]
-    #     new_trail.description = request.data["description"]
-    #     new_trail.address = request.data["address"]
-    #     new_trail.zipcode = request.data["zipcode"]
-    #     new_trail.creator_id = request.data["creator_id"]
+        new_friend_request = Friend()
+        new_friend_request.sender_id = request.data["senderId"]
+        new_friend_request.receiver_id = request.data["receiverId"]
+        new_friend_request.requestPending = request.data["isRequestPending"]
+        new_friend_request.requestAccepted = request.data["isAccepted"]
 
-    #     new_trail.save()
+        new_friend_request.save()
 
-    #     serializer = TrailSerializer(
-    #         new_trail, context={'request': request})
+        serializer = FriendSerializer(
+            new_friend_request, context={'request': request})
 
-    #     return Response(serializer.data)
+        return Response(serializer.data)
 
     # REVIEW: So I learned something new here... Need a retrieve method
     # in order to run a PUT request (404 on the PUT w/o the retrieve method)
