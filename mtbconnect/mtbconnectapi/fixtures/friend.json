@@ -1,0 +1,42 @@
+[
+    {
+      "pk": 1,
+      "model": "mtbconnectapi.friend",
+      "fields": {
+        "senderId": 1,
+        "receiverId": 4,
+        "isRequestPending": 1,
+        "isAccepted": 0
+      }
+    },
+    {
+      "pk": 2,
+      "model": "mtbconnectapi.friend",
+      "fields": {
+        "senderId": 5,
+        "receiverId": 1,
+        "isRequestPending": 1,
+        "isAccepted": 0
+      }
+    },
+    {
+      "pk": 3,
+      "model": "mtbconnectapi.friend",
+      "fields": {
+        "senderId": 4,
+        "receiverId": 1,
+        "isRequestPending": 1,
+        "isAccepted": 0
+      }
+    },
+    {
+      "pk": 4,
+      "model": "mtbconnectapi.friend",
+      "fields": {
+        "senderId": 7,
+        "receiverId": 1,
+        "isRequestPending": 1,
+        "isAccepted": 0
+      }
+    }
+]
