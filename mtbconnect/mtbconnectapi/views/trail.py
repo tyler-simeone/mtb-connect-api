@@ -30,7 +30,7 @@ class Trails(ViewSet):
 
         new_trail.save()
 
-        serializer = ProductSerializer(
+        serializer = TrailSerializer(
             new_trail, context={'request': request})
 
         return Response(serializer.data)
@@ -42,7 +42,7 @@ class Trails(ViewSet):
 
             serializer = TrailSerializer(
                 trail, context={'request': request})
-                
+
             return Response(serializer.data)
 
         except Exception as ex:
