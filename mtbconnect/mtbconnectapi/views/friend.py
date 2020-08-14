@@ -34,34 +34,34 @@ class Friends(ViewSet):
 
     #     return Response(serializer.data)
 
-    # def retrieve(self, request, pk=None):
+    # REVIEW: So I learned something new here... Need a retrieve method
+    # in order to run a PUT request (404 on the PUT w/o the retrieve method)
+    def retrieve(self, request, pk=None):
 
-    #     try:
-    #         trail = Trail.objects.get(pk=pk)
+        try:
+            friend = Friend.objects.get(pk=pk)
 
-    #         serializer = TrailSerializer(
-    #             trail, context={'request': request})
+            serializer = FriendSerializer(
+                friend, context={'request': request})
 
-    #         return Response(serializer.data)
+            return Response(serializer.data)
 
-    #     except Exception as ex:
-    #         return HttpResponseServerError(ex)
+        except Exception as ex:
+            return HttpResponseServerError(ex)
 
-    # def put(self, request, pk=None):
-    #     """Handle PUT requests for an individual trail
-    #     Returns:
-    #         Response -- Empty body with 204 status code
-    #     """
-    #     trail = Trail.objects.get(pk=pk)
-    #     trail.trail_name = request.data["trail_name"]
-    #     trail.trail_img = request.data["trail_img"]
-    #     trail.description = request.data["description"]
-    #     trail.address = request.data["address"]
-    #     trail.zipcode = request.data["zipcode"]
-    #     trail.creator_id = request.data["creator_id"]
-    #     trail.save()
+    def put(self, request, pk=None):
+        """Handle PUT requests for an individual trail
+        Returns:
+            Response -- Empty body with 204 status code
+        """
+        friend = Friend.objects.get(pk=pk)
+        friend.sender_id = request.data["senderId"]
+        friend.receiver_id = request.data["receiverId"]
+        friend.requestPending = request.data["isRequestPending"]
+        friend.requestAccepted = request.data["isAccepted"]
+        friend.save()
 
-    #     return Response({}, status=status.HTTP_204_NO_CONTENT)
+        return Response({}, status=status.HTTP_204_NO_CONTENT)
 
     # def destroy(self, request, pk=None):
     #     """Handle DELETE requests for a single trail
