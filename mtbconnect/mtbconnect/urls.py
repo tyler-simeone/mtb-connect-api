@@ -25,6 +25,7 @@ router = routers.DefaultRouter(trailing_slash=False)
 router.register(r'trails', Trails, 'trail')
 router.register(r'trailusers', TrailUsers, 'trailuser')
 router.register(r'friends', Friends, 'friend')
+router.register(r'users', Users, 'user')
 
 urlpatterns = [
     path('admin/', admin.site.urls),
