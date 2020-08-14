@@ -15,6 +15,8 @@ class TrailUserSerializer(serializers.HyperlinkedModelSerializer):
         )
         fields = ('id', 'trail_id', 'user_id')
 
+        depth = 1
+
 class TrailUsers(ViewSet):
 
     def create(self, request):
@@ -30,33 +32,33 @@ class TrailUsers(ViewSet):
 
         return Response(serializer.data)
 
-    # def destroy(self, request, pk=None):
-    #     """Handle DELETE requests for a single trail
-    #     Returns:
-    #         Response -- 200, 404, or 500 status code
-    #     """
-    #     try:
-    #         trail = Trail.objects.get(pk=pk)
-    #         trail.delete()
+    def destroy(self, request, pk=None):
+        """Handle DELETE requests for a single trailuser
+        Returns:
+            Response -- 200, 404, or 500 status code
+        """
+        try:
+            trail_user = TrailUser.objects.get(pk=pk)
+            trail_user.delete()
 
-    #         return Response({}, status=status.HTTP_204_NO_CONTENT)
+            return Response({}, status=status.HTTP_204_NO_CONTENT)
 
-    #     except Trail.DoesNotExist as ex:
-    #         return Response({'message': ex.args[0]}, status=status.HTTP_404_NOT_FOUND)
+        except TrailUser.DoesNotExist as ex:
+            return Response({'message': ex.args[0]}, status=status.HTTP_404_NOT_FOUND)
 
-    #     except Exception as ex:
-    #         return Response({'message': ex.args[0]}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
+        except Exception as ex:
+            return Response({'message': ex.args[0]}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
 
-    # def list(self, request):
+    def list(self, request):
         
-    #     trails = Trail.objects.all()
+        trail_users = TrailUser.objects.all()
 
-    #     zipcode = self.request.query_params.get('zipcode')
+        trail_id = self.request.query_params.get('trailId')
 
-    #     if zipcode is not None:
-    #         trails = Trail.objects.filter(zipcode = zipcode)
+        if trail_id is not None:
+            trail_users = TrailUser.objects.filter(trail_id = trail_id)
 
-    #     serializer = TrailUserSerializer(
-    #         trails, many=True, context={'request': request})
+        serializer = TrailUserSerializer(
+            trail_users, many=True, context={'request': request})
 
-    #     return Response(serializer.data)
+        return Response(serializer.data)
