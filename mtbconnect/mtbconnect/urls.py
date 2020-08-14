@@ -29,6 +29,6 @@ urlpatterns = [
     path('', include(router.urls)),
     path('register', register_user),
     path('login', login_user),
-    # add paths to all routes, as well as auth viewsets,
-    # obtain_auth_token, and the last api-auth one as well..
+    path('api-token-auth', obtain_auth_token),
+    path('api-auth', include('rest_framework.urls', namespace='rest_framework')),
 ]
