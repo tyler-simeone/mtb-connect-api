@@ -22,10 +22,11 @@ from mtbconnectapi.views import *
 
 router = routers.DefaultRouter(trailing_slash=False)
 # Register your viewset routes here
+router.register(r'trails', Trails, 'trail')
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    # path('', include(router.urls)),
+    path('', include(router.urls)),
     path('register', register_user),
     path('login', login_user),
     # add paths to all routes, as well as auth viewsets,
