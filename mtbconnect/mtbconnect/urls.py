@@ -23,6 +23,7 @@ from mtbconnectapi.views import *
 router = routers.DefaultRouter(trailing_slash=False)
 # Register your viewset routes here
 router.register(r'trails', Trails, 'trail')
+router.register(r'trailusers', TrailUsers, 'trailuser')
 
 urlpatterns = [
     path('admin/', admin.site.urls),
