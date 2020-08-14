@@ -47,3 +47,12 @@ class Trails(ViewSet):
 
         except Exception as ex:
             return HttpResponseServerError(ex)
+
+    def list(self, request):
+        
+        trails = Trail.objects.all()
+        
+        serializer = TrailSerializer(
+            trails, many=True, context={'request': request})
+
+        return Response(serializer.data)
