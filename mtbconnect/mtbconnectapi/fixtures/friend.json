@@ -3,40 +3,40 @@
       "pk": 1,
       "model": "mtbconnectapi.friend",
       "fields": {
-        "senderId": 1,
-        "receiverId": 4,
-        "isRequestPending": 1,
-        "isAccepted": 0
+        "sender_id": 1,
+        "receiver_id": 4,
+        "requestPending": 1,
+        "requestAccepted": 0
       }
     },
     {
       "pk": 2,
       "model": "mtbconnectapi.friend",
       "fields": {
-        "senderId": 5,
-        "receiverId": 1,
-        "isRequestPending": 1,
-        "isAccepted": 0
+        "sender_id": 5,
+        "receiver_id": 1,
+        "requestPending": 1,
+        "requestAccepted": 0
       }
     },
     {
       "pk": 3,
       "model": "mtbconnectapi.friend",
       "fields": {
-        "senderId": 4,
-        "receiverId": 1,
-        "isRequestPending": 1,
-        "isAccepted": 0
+        "sender_id": 4,
+        "receiver_id": 1,
+        "requestPending": 1,
+        "requestAccepted": 0
       }
     },
     {
       "pk": 4,
       "model": "mtbconnectapi.friend",
       "fields": {
-        "senderId": 7,
-        "receiverId": 1,
-        "isRequestPending": 1,
-        "isAccepted": 0
+        "sender_id": 7,
+        "receiver_id": 1,
+        "requestPending": 1,
+        "requestAccepted": 0
       }
     }
 ]
