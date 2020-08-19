@@ -3,7 +3,7 @@ from rest_framework.viewsets import ViewSet
 from rest_framework.response import Response
 from rest_framework import serializers
 from rest_framework import status
-from ..models import TrailUser
+from ..models import TrailUser, User
 
 class TrailUserSerializer(serializers.HyperlinkedModelSerializer):
 
@@ -15,7 +15,7 @@ class TrailUserSerializer(serializers.HyperlinkedModelSerializer):
         )
         fields = ('id', 'trail_id', 'user_id', 'user')
 
-        depth = 1
+        depth = 2
 
 class TrailUsers(ViewSet):
 
