@@ -13,7 +13,7 @@ class TrailUserSerializer(serializers.HyperlinkedModelSerializer):
             view_name='trailuser',
             lookup_field='id'
         )
-        fields = ('id', 'trail_id', 'user')
+        fields = ('id', 'trail_id', 'user_id', 'user')
 
         depth = 1
 
