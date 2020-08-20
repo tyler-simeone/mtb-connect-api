@@ -91,7 +91,7 @@ class Friends(ViewSet):
             friends = Friend.objects.filter(receiver_id=request_receiver, requestAccepted=request_status)
 
         # Returns friends that user sent req to, and friends accepted
-        if request_sender and request_status:
+        elif request_sender and request_status:
             friends = Friend.objects.filter(sender_id=request_sender, requestAccepted=request_status)
 
         elif request_receiver is not None:
