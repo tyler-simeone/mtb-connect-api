@@ -13,7 +13,9 @@ class UserSerializer(serializers.HyperlinkedModelSerializer):
             view_name='user',
             lookup_field='id'
         )
-        fields = ('id', 'user_id', 'avatar_img')
+        fields = ('id', 'user_id', 'user', 'avatar_img')
+
+        depth = 1
 
 class Users(ViewSet):
 
