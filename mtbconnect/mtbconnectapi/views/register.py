@@ -19,7 +19,8 @@ def login_user(request):
 
         if authenticated_user is not None:
             token = Token.objects.get(user=authenticated_user)
-            data = json.dumps({"valid": True, "token": token.key})
+            user = WebUser.objects.get(user_id = authenticated_user.id)
+            data = json.dumps({"valid": True, "token": token.key, "user_id": user.id})
             return HttpResponse(data, content_type='application/json')
 
         else:
@@ -52,6 +53,6 @@ def register_user(request):
  
     token = Token.objects.create(user=new_user)
     
-    
+
     data = json.dumps({"token": token.key, "user_id": MTBCUser.id})
     return HttpResponse(data, content_type='application/json')
