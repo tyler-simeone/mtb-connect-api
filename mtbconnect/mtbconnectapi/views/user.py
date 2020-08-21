@@ -31,3 +31,16 @@ class Users(ViewSet):
 
         except Exception as ex:
             return HttpResponseServerError(ex)
+   
+    def list(self, request):
+
+        try:
+            users_list = User.objects.all()
+
+            serializer = UserSerializer(
+                users_list, many=True, context={'request': request})
+
+            return Response(serializer.data)
+
+        except Exception as ex:
+            return HttpResponseServerError(ex)
