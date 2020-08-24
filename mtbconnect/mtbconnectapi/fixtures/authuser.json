@@ -1,0 +1,17 @@
+[
+    {
+        "pk": 1,
+        "model": "auth.user",
+        "fields": {
+            "first_name": "Tyler",
+            "last_name": "Simeone",
+            "username": "tyler",
+            "email": "shredtildead@gmail.com",
+            "password": "password123",
+            "date_joined": "2020-08-13 17:28:48",
+            "is_staff": "1",
+            "is_active": "1",
+            "is_superuser": "1"
+        }
+    }
+]
