@@ -1,0 +1,164 @@
+[
+{
+    "model": "auth.user",
+    "pk": 1,
+    "fields": {
+        "password": "pbkdf2_sha256$216000$Axd4H4NF2lW8$lJiwkA2wiues098BH5N+nBoytxwg9mc1K/06ePcVv+c=",
+        "last_login": "2020-08-24T16:32:37.395Z",
+        "is_superuser": true,
+        "username": "tylersimeone",
+        "first_name": "",
+        "last_name": "",
+        "email": "tyler.simeone@gmail.com",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2020-08-24T16:28:16.265Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "pk": 31,
+    "fields": {
+        "password": "pbkdf2_sha256$216000$07ln8SimLS6r$YlsthU85VS7sx8JhfyWJ6q87tz2tE8qeWpF4r9726wU=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "shredtildead",
+        "first_name": "Tyler",
+        "last_name": "Simeone",
+        "email": "letsride@gmail.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2020-08-24T17:07:27.880Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "pk": 32,
+    "fields": {
+        "password": "pbkdf2_sha256$216000$LK2U7XrDSk0C$YivLgZBHxKkXmXK6z6+rWVEGUWKpJvOTcreHb48P/sc=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "SenderBudz",
+        "first_name": "Larry",
+        "last_name": "Enticer",
+        "email": "sandyrandy@gmail.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2020-08-24T18:48:51.936Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "pk": 33,
+    "fields": {
+        "password": "pbkdf2_sha256$216000$CyefxqoXvA9I$Lu6+EQfgHil/bsoocWAcfQAIkzi8H/ovNY8h3kWA85g=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "winthetrin",
+        "first_name": "Trinidad",
+        "last_name": "James",
+        "email": "seeyuh@aol.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2020-08-24T18:49:31.225Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "pk": 34,
+    "fields": {
+        "password": "pbkdf2_sha256$216000$dx3SaInUzJfU$79f4kTDkQIHr+zIyxeCza6DtaVmF0GCP+07S9bNngVk=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "freeradical",
+        "first_name": "Lil",
+        "last_name": "Jon",
+        "email": "bro@bro.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2020-08-24T18:49:58.110Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "pk": 35,
+    "fields": {
+        "password": "pbkdf2_sha256$216000$d4EH0y0GlJM1$CGQR5QBNPEZg9x/4NMTmhU5FKJriuVCR1ELlWJazWbs=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "terminatingCoronavirus",
+        "first_name": "The",
+        "last_name": "Terminator",
+        "email": "terminator@gmail.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2020-08-24T18:50:35.734Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "pk": 36,
+    "fields": {
+        "password": "pbkdf2_sha256$216000$HaBDHiFsaYjv$gvuSSfPKwpDj3z1yNlmeNqm3987gRIIXijUYGvuVjsQ=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "Timster",
+        "first_name": "Timmy",
+        "last_name": "Bimmy",
+        "email": "tim@gmail.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2020-08-24T18:50:59.534Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "pk": 37,
+    "fields": {
+        "password": "pbkdf2_sha256$216000$N91jUWJeirfI$NYdHSb6J6BcCdC0TPGaq2CR+4dVNSA+QzceQsIEQ5e8=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "LukeSkySender",
+        "first_name": "Luke",
+        "last_name": "Skywalker",
+        "email": "luke@gmail.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2020-08-24T18:51:21.908Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "pk": 38,
+    "fields": {
+        "password": "pbkdf2_sha256$216000$SCtwRH03MB10$1DfVnz6sDQPIurHbknXf5Uc2LhLIkP5vbansVBENgmY=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "yodababy",
+        "first_name": "Baby",
+        "last_name": "Yoda",
+        "email": "babyyoda@gmail.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2020-08-24T18:51:47.778Z",
+        "groups": [],
+        "user_permissions": []
+    }
+}
+]
