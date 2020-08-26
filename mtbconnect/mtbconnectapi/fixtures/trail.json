@@ -4,7 +4,7 @@
       "model": "mtbconnectapi.trail",
       "fields": {
         "trail_name": "Percy Warner",
-        "trail_img": "https://qph.fs.quoracdn.net/main-raw-134684551-jixoicflljktgefookoaidzgcduoxioq.jpeg",
+        "trail_img": "https://rockcityconstruction.com/wp-content/uploads/2017/02/247-Percy-Warner-BIke-Trails.jpg",
         "description": "Awesome trail with super-fun features such as berms, rock drop-offs, and jumps. Riders can pick up some great speed on the bike at these trails.",
         "address": "1300 Forrest Park Dr, Nashville, TN",
         "zipcode": "37067",
@@ -44,18 +44,6 @@
         "description": "Great bike park! Big jumps and very fast downhill sections of trail. Best for experienced riders.",
         "address": "3700 Lancaster Dr, Knoxville, TN",
         "zipcode": "37920",
-        "creator": "2"
-      }
-    },
-    {
-      "pk": 5,
-      "model": "mtbconnectapi.trail",
-      "fields": {
-        "trail_name": "Cool Springs Trail",
-        "trail_img": "https://reviews.mtbr.com/wp-content/uploads/2014/04/betteride-trailride.jpg",
-        "description": "Fun and technical trail in the heart of Franklin, TN! Features include a fun wallride, lots of rocks, and a few drops!",
-        "address": "7062 Southstar Dr, Franklin, TN",
-        "zipcode": "37067",
         "creator": "2"
       }
     }
