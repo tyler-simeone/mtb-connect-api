@@ -46,5 +46,17 @@
         "zipcode": "37920",
         "creator": "2"
       }
+    },
+    {
+      "pk": 5,
+      "model": "mtbconnectapi.trail",
+      "fields": {
+        "trail_name": "Lock Four",
+        "trail_img": "https://lh5.googleusercontent.com/p/AF1QipOHyBH2-UUlbWmuDer-T1LIkgdKSyCxQeJ_EOMA=w408-h860-k-no",
+        "description": "Great trail near Nashville that rides ride alongside the Cumberland River.",
+        "address": "Water Treatment Rd, Gallatin, TN",
+        "zipcode": "37066",
+        "creator": "2"
+      }
     }
 ]
