@@ -70,6 +70,7 @@ CORS_ORIGIN_WHITELIST = (
     'http://localhost:3000',
     'http://127.0.0.1:8080',
     'http://mtbconnect.s3-website.us-east-2.amazonaws.com',
+    'https://mtb-connect.com',
     'http://127.0.0.1:8000'
 )
 
