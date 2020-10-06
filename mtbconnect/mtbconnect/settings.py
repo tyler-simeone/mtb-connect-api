@@ -25,7 +25,7 @@ SECRET_KEY = 'wd46)+acdv#_jqkzk-9x@)xdlycq2+khuzrd5qmtb&b8euf%_3'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['18.216.29.32']
+ALLOWED_HOSTS = ['3.18.215.253']
 
 
 # Application definition
@@ -71,7 +71,8 @@ CORS_ORIGIN_WHITELIST = (
     'http://127.0.0.1:8080',
     'http://mtbconnect.s3-website.us-east-2.amazonaws.com',
     'https://mtb-connect.com',
-    'http://127.0.0.1:8000'
+    'http://127.0.0.1:8000',
+    'http://3.18.215.253:8080'
 )
 
 ROOT_URLCONF = 'mtbconnect.urls'
