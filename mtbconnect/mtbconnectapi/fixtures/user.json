@@ -28,7 +28,7 @@
       "model": "mtbconnectapi.user",
       "fields": {
         "user": 33,
-        "avatar_img": "https://musicchartsarchive.com/sites/default/files/artists/trinidad-james.jpg"
+        "avatar_img": "https://www.denofgeek.com/wp-content/uploads/2017/03/darth-vader-1_0.jpg?fit=1947%2C1274"
       }
     },
     {
@@ -36,7 +36,7 @@
       "model": "mtbconnectapi.user",
       "fields": {
         "user": 34,
-        "avatar_img": "https://bookingagentinfo.com/wp-content/uploads/2014/07/Lil-Jon-contact-information.jpg"
+        "avatar_img": "https://vignette.wikia.nocookie.net/starwars/images/6/6f/Anakin_Skywalker_RotS.png/revision/latest/top-crop/width/360/height/360?cb=20130621175844"
       }
     },
     {
