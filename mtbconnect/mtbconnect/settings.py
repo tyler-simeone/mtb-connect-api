@@ -72,6 +72,7 @@ CORS_ORIGIN_WHITELIST = (
     'http://mtbconnect.s3-website.us-east-2.amazonaws.com',
     'http://mtb-connect.com',
     'https://mtb-connect.com',
+    'https://www.mtb-connect.com',
     'http://127.0.0.1:8000',
     'http://3.18.215.253:8080',
     'https://3.18.215.253:8080',
