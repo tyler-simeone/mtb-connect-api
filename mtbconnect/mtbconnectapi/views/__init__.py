@@ -3,3 +3,4 @@ from .trail import Trails
 from .trailuser import TrailUsers
 from .friend import Friends
 from .user import Users
+from .video import Videos
