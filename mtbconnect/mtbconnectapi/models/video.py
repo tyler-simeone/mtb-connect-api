@@ -6,7 +6,7 @@ from .trail import Trail
 class Video(models.Model):
     
     video_url = models.CharField(max_length=1000, null=True)
-    trail = models.ForeignKey(Trail, on_delete = models.DO_NOTHING, related_name="videos", null=True)
+    trail = models.ForeignKey(Trail, related_name="videos", null=True, on_delete = models.DO_NOTHING)
     
     class Meta:
         verbose_name = ("Video")
