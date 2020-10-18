@@ -3,7 +3,7 @@ from rest_framework.viewsets import ViewSet
 from rest_framework.response import Response
 from rest_framework import serializers
 from rest_framework import status
-from ..models import Trail
+from ..models import Trail, Video
 
 class TrailSerializer(serializers.HyperlinkedModelSerializer):
 
@@ -39,6 +39,10 @@ class Trails(ViewSet):
 
         try:
             trail = Trail.objects.get(pk=pk)
+
+            videos = Video.objects.get(pk=trail.video_id)
+
+            trail.videos = videos
 
             serializer = TrailSerializer(
                 trail, context={'request': request})
