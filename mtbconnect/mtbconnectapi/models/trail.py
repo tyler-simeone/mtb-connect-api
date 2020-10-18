@@ -1,6 +1,7 @@
 from django.db import models
 from django.urls import reverse
 from .user import User
+from .video import Video
 
 class Trail(models.Model):
     
@@ -11,6 +12,7 @@ class Trail(models.Model):
     address = models.CharField(null = False, max_length = 100)
     zipcode = models.CharField(null = False, max_length = 10)
     creator = models.ForeignKey(User, on_delete = models.CASCADE)
+    video = models.ForeignKey(Video, on_delete = models.CASCADE, null=True)
     
     class Meta:
         verbose_name = ("Trail")
