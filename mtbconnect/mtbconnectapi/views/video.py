@@ -10,7 +10,7 @@ class VideoSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Video
         url = serializers.HyperlinkedIdentityField(
-            view_name='Videos',
+            view_name='videos',
             lookup_field='id'
         )
         fields = ('id', 'video_url', 'trail_id')
