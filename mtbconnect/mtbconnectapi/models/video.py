@@ -1,10 +1,12 @@
 from django.db import models
 from django.contrib.auth.models import User
 from django.urls import reverse
+from .trail import Trail
 
 class Video(models.Model):
     
     video_url = models.CharField(max_length=1000, null=True)
+    trail = models.ForeignKey(Trail, on_delete = models.DO_NOTHING, related_name="videos")
     
     class Meta:
         verbose_name = ("Video")

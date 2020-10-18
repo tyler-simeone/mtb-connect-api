@@ -16,6 +16,8 @@ class TrailSerializer(serializers.HyperlinkedModelSerializer):
         fields = ('id', 'trail_name', 'trail_img', 'description', 'address',
                   'zipcode', 'creator_id', 'videos')
 
+        depth = 1
+
 class Trails(ViewSet):
 
     def create(self, request):
