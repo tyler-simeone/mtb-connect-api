@@ -14,7 +14,7 @@ class TrailSerializer(serializers.HyperlinkedModelSerializer):
             lookup_field='id'
         )
         fields = ('id', 'trail_name', 'trail_img', 'description', 'address',
-                  'zipcode', 'creator_id')
+                  'zipcode', 'creator_id', 'videos')
 
 class Trails(ViewSet):
 
@@ -40,9 +40,9 @@ class Trails(ViewSet):
         try:
             trail = Trail.objects.get(pk=pk)
 
-            videos = Video.objects.get(pk=trail.video_id)
+            trail_videos = Video.objects.get(pk=trail.video_id)
 
-            trail.videos = videos
+            trail.videos = trail_videos
 
             serializer = TrailSerializer(
                 trail, context={'request': request})
