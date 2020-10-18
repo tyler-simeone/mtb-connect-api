@@ -42,10 +42,6 @@ class Trails(ViewSet):
         try:
             trail = Trail.objects.get(pk=pk)
 
-            trail_videos = Video.objects.get(pk=trail.video_id)
-
-            trail.videos = trail_videos
-
             serializer = TrailSerializer(
                 trail, context={'request': request})
 
