@@ -30,3 +30,12 @@ class Videos(ViewSet):
 
         except Exception as ex:
             return HttpResponseServerError(ex)
+
+    def list(self, request):
+        
+        videos = Video.objects.all()
+
+        serializer = VideoSerializer(
+            videos, many=True, context={'request': request})
+
+        return Response(serializer.data)
