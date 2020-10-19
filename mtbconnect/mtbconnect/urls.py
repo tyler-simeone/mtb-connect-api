@@ -26,7 +26,7 @@ router.register(r'trails', Trails, 'trail')
 router.register(r'trailusers', TrailUsers, 'trailuser')
 router.register(r'friends', Friends, 'friend')
 router.register(r'users', Users, 'user')
-router.register(r'videos', Videos, 'videos')
+router.register(r'videos', Videos, 'video')
 
 urlpatterns = [
     path('admin/', admin.site.urls),
